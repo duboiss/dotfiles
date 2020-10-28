@@ -2,17 +2,30 @@
 	name = Steven DUBOIS
 	email = git@duboiss.fr
 	signingkey = 35D929498C6C0DE8
+
 [core]
 	#autocrlf = input
 	excludesfile = ~/.gitignore
+
 [commit] 
 	#gpgsign = true
+
 [alias]
 	br = branch
-	co = checkout
-	cl = clone
+	cb = checkout -b
 	ci = commit
-	last = log -1 HEAD --stat
+	cl = clone
+	cm = checkout master
+	cn = rev-list --count HEAD
+	co = checkout
+	lc = log -1 HEAD --stat
 	lg = log --oneline
+	rb = rebase origin/master
+	rl = reflog
+	sl = stash list
+	sp = stash pop
 	st = status
 	unstage = reset HEAD --
+
+[log]
+        abbrevCommit = true
