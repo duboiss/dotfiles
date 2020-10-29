@@ -24,6 +24,7 @@
 	rl = reflog
 	sl = stash list
 	sp = stash pop
+	ss = stash save -u
 	st = status
 	unstage = reset HEAD --
 
