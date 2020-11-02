@@ -20,6 +20,7 @@
 	co = checkout
 	lc = log -1 HEAD --stat
 	lg = log --oneline
+	pf = push -f
 	rb = rebase origin/master
 	rl = reflog
 	sl = stash list
