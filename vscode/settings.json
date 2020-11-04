@@ -1,0 +1,26 @@
+{
+    // General
+    "breadcrumbs.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "explorer.openEditors.visible": 0,
+    "extensions.ignoreRecommendations": false,
+
+    // Languages
+    "php.suggest.basic": false,
+
+    // Telemetry 
+    "telemetry.enableTelemetry": false, 
+    "telemetry.enableCrashReporter": false,
+
+    // Workbench 
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "right",
+
+    // Specific extensions
+    "php-docblocker.returnGap": true,
+
+    // Specific windows os
+    // "terminal.integrated.shell.windows": "wsl.exe",
+}
