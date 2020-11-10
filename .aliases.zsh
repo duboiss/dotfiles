@@ -5,9 +5,10 @@ alias mv="mv -iv"
 alias mkdir="mkdir -vp"
 
 # Docker
-alias dc="docker compose"
-alias dcu="docker-compose up"
+alias dc="docker-compose"
 alias dcd="docker-compose down"
+alias dcu="docker-compose up"
+alias dr="docker run"
 
 # PHP
 alias compo="composer"
