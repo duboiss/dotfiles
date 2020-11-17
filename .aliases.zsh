@@ -6,9 +6,19 @@ alias mkdir="mkdir -vp"
 
 # Docker
 alias dc="docker-compose"
+alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
-alias dcu="docker-compose up"
+alias dcr="docker-compose run"
+
+alias di="docker images"
+alias dlc="docker ps -l -q" # Last container id
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias dpse="docker ps --filter="status=exited""
 alias dr="docker run"
+
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s
+dstop() { docker stop $(docker ps -a -q); }
 
 # PHP
 alias compo="composer"
