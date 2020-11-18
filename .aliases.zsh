@@ -17,7 +17,7 @@ alias dpsa="docker ps -a"
 alias dpse="docker ps --filter="status=exited""
 alias dr="docker run"
 
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 dstop() { docker stop $(docker ps -a -q); }
 
 # PHP
