@@ -4,6 +4,8 @@ alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
 
+alias q="cd ~ && clear"
+
 # Docker
 alias dc="docker-compose"
 alias dcu="docker-compose up -d"
