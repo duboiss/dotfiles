@@ -1,4 +1,4 @@
-alias path="echo -e ${PATH//:/\\n}" # Print each PATH entry on a separate line
+alias path="print -l $path" # Print each PATH entry on a separate line
 
 alias cp="cp -ir"
 alias mv="mv -iv"
