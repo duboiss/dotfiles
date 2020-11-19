@@ -8,6 +8,9 @@
     "extensions.ignoreRecommendations": false,
 
     // Languages
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
     "php.suggest.basic": false,
 
     // Telemetry 
