@@ -20,6 +20,12 @@ alias dpsa="docker ps -a"
 alias dpse="docker ps --filter="status=exited""
 alias dr="docker run"
 
+alias dvc="docker volume create"
+alias dvi="docker volume inspect"
+alias dvls="docker volume ls"
+alias dvp="docker volume prune"
+alias dvrm="docker volume rm"
+
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 dstop() { docker stop $(docker ps -a -q); }
 
