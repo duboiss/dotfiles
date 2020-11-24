@@ -10,6 +10,11 @@
 [commit] 
 	#gpgsign = true
 
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+
 [alias]
 	aliases = config --get-regexp alias
 	br = branch -v
