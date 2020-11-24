@@ -11,24 +11,30 @@
 	#gpgsign = true
 
 [alias]
-	br = branch
+	aliases = config --get-regexp alias
+	br = branch -v
+	branches = branch --all
 	cb = checkout -b
 	ci = commit
 	cl = clone
 	cm = checkout master
 	cn = rev-list --count HEAD
 	co = checkout
+	contributors = shortlog --summary --email --numbered
 	lc = log -1 HEAD --stat
 	lg = log --oneline
 	nuke =  !git clean -df && git reset --hard
 	pf = push -f
 	rb = rebase origin/master
+	remotes = remote -v
 	rl = reflog
 	sl = stash list
 	sp = stash pop
 	ss = stash save -u
 	st = status
+	tags = tag -l
 	unstage = reset HEAD --
+	whoami = !git config user.name && git config user.email
 
 [log]
         abbrevCommit = true
