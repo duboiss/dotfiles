@@ -2,9 +2,10 @@
 
 set autoindent
 #set constantshow
-#set indicator
+set indicator
 #set linenumbers
 set mouse
+set softwrap
 set tabsize 4
 #set tabstospaces
 set trimblanks
