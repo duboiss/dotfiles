@@ -1,0 +1,17 @@
+#include /usr/local/share/nano/*.nanorc
+
+set autoindent
+#set constantshow
+#set indicator
+#set linenumbers
+set mouse
+set tabsize 4
+#set tabstospaces
+set trimblanks
+
+# Colors
+set functioncolor white
+set keycolor white
+set numbercolor white
+set statuscolor yellow
+set titlecolor white,black

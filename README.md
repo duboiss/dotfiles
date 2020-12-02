@@ -7,7 +7,8 @@ Cross-platform dotfiles
 
 ## Files
 - Git: .gitconfig and global .gitignore
-- oh-my-zsh: nord theme
+- Oh-my-zsh: nord theme
+- Nano: .nanorc
 - Visual Studio code: settings.json
 
 ## Recommandations
