@@ -1,29 +1,64 @@
 {
-    // General
+    /**
+    * Better defaults
+    **/
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    //"editor.detectIndentation": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "window.nativeFullScreen": false,
+    "window.newWindowDimensions": "inherit",
+    "workbench.editor.enablePreview": false,
+
+    /**
+    * Less bulky
+    */
     "breadcrumbs.enabled": false,
-    "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
-    "editor.wordWrap": "on",
+    "editor.renderIndentGuides": false,
     "explorer.openEditors.visible": 0,
     "extensions.ignoreRecommendations": false,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.showTabs": false,
+    "workbench.statusBar.visible": true,
 
-    // Languages
+    /**
+    * Languages
+    */
     "emmet.includeLanguages": {
         "twig": "html"
     },
     "php.suggest.basic": false,
 
-    // Telemetry 
-    "telemetry.enableTelemetry": false, 
+    /**
+    * Telemetry
+    */
+    "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
 
-    // Workbench 
-    "workbench.activityBar.visible": true,
+    /**
+    * Personal preferences
+    */
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontFamily": "SourceCodePro Powerline",
     "workbench.sideBar.location": "right",
 
-    // Specific extensions
+    /**
+    * Extensions
+    */
     "php-docblocker.returnGap": true,
 
-    // Specific windows os
-    // "terminal.integrated.shell.windows": "wsl.exe",
+    /**
+    * Windows OS
+    */
+    //"terminal.integrated.shell.windows": "wsl.exe",
+
+    "files.autoSave": "afterDelay"
 }
