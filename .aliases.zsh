@@ -4,6 +4,7 @@ alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
 
+alias go="take" # oh-my-zsh specific
 alias q="cd ~ && clear"
 
 # Docker
