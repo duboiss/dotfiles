@@ -5,7 +5,10 @@ alias mv="mv -iv"
 alias mkdir="mkdir -vp"
 
 alias go="take" # oh-my-zsh specific
+alias rmrf="rm -rf"
 alias q="cd ~ && clear"
+
+calc() { awk "BEGIN{print $*}"; }
 
 # Docker
 alias dc="docker-compose"
