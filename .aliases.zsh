@@ -14,6 +14,8 @@ calc() { awk "BEGIN{print $*}"; }
 alias dc="docker-compose"
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
+alias dce="docker-compose exec"
+alias dcp="docker-compose pull"
 alias dcps="docker-compose ps"
 alias dcr="docker-compose run"
 
