@@ -8,6 +8,7 @@ alias mkdir="mkdir -vp"
 alias go="take" # oh-my-zsh specific
 alias rmrf="rm -rf"
 alias q="cd ~ && clear"
+alias ws="cd ~/workspace"
 
 calc() { awk "BEGIN{print $*}"; }
 
@@ -38,6 +39,7 @@ dstop() { docker stop $(docker ps -a -q); }
 
 # PHP
 alias compo="composer"
+alias compog="composer global"
 alias sym="symfony"
 alias symc="symfony console"
 
