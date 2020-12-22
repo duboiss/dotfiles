@@ -1,3 +1,4 @@
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias path="print -l $path" # Print each PATH entry on a separate line
 
 alias cp="cp -ir"
