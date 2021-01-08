@@ -27,6 +27,7 @@
 	cn = rev-list --count HEAD
 	co = checkout
 	contributors = shortlog --summary --email --numbered
+	difff = diff ':(exclude)composer.lock' ':(exclude)package-lock.json' ':(exclude)yarn.lock'
 	lc = log -1 HEAD --stat
 	lg = log --oneline
 	nuke =  !git clean -df && git reset --hard
