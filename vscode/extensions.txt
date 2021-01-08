@@ -1,0 +1,10 @@
+arcticicestudio.nord-visual-studio-code
+bmewburn.vscode-intelephense-client
+esbenp.prettier-vscode
+MehediDracula.php-namespace-resolver
+mikestead.dotenv
+mrmlnc.vscode-duplicate
+ms-azuretools.vscode-docker
+ms-vscode-remote.remote-wsl
+neilbrayfield.php-docblocker
+octref.vetur
