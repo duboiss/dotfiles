@@ -4,7 +4,7 @@
 	signingkey = 35D929498C6C0DE8
 
 [core]
-	#autocrlf = input
+	autocrlf = input
 	excludesfile = ~/.gitignore
 
 [commit] 
@@ -54,3 +54,11 @@
 
 [log]
         abbrevCommit = true
+
+[diff]
+	noprefix = true
+
+[pager]
+	branch = false
+	diff = "delta --plus-color=\"#728562\" --minus-color=\"#85434a\" --theme='Nord'"
+
