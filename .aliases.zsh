@@ -4,6 +4,7 @@ alias path="print -l $path" # Print each PATH entry on a separate line
 alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
+alias ll="exa -la --group-directories-first --icons"
 
 alias go="take" # oh-my-zsh specific
 alias rmrf="rm -rf"
