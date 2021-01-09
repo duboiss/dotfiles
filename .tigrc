@@ -1,0 +1,6 @@
+set tab-size = 4
+set ignore-case = yes
+
+color cursor yellow black bold
+color title-blur white default
+color title-focus white default
