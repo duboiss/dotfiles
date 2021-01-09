@@ -10,7 +10,10 @@ alias rmrf="rm -rf"
 alias q="cd ~ && clear"
 alias ws="cd ~/workspace"
 
+alias n="nano"
+
 calc() { awk "BEGIN{print $*}"; }
+clone() { git clone $1 && cd $(basename ${1%.*}) }
 
 # Docker
 alias dc="docker-compose"
@@ -28,6 +31,7 @@ alias dpsa="docker ps -a"
 alias dpse="docker ps --filter="status=exited""
 alias dr="docker run"
 
+alias dv="docker volume"
 alias dvc="docker volume create"
 alias dvi="docker volume inspect"
 alias dvls="docker volume ls"
