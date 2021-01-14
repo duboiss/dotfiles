@@ -14,7 +14,10 @@ alias ws="cd ~/workspace"
 alias n="nano"
 
 calc() { awk "BEGIN{print $*}"; }
-clone() { git clone $1 && cd $(basename ${1%.*}) }
+clone() {
+  git clone "$@"
+  cd "$(basename "${1%.*}")" || exit
+}
 
 # Docker
 alias dc="docker-compose"
