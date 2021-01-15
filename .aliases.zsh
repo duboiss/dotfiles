@@ -21,6 +21,7 @@ clone() {
 
 # Docker
 alias dc="docker-compose"
+alias dcb="docker-compose build"
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
 alias dce="docker-compose exec"
@@ -28,6 +29,7 @@ alias dcp="docker-compose pull"
 alias dcps="docker-compose ps"
 alias dcr="docker-compose run"
 
+alias dcls="docker container ls"
 alias di="docker images"
 alias dlc="docker ps -l -q" # Last container id
 alias dps="docker ps"
