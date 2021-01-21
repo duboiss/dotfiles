@@ -1,7 +1,7 @@
 [
-    /**
-    * Panels
-    **/
+    /*
+        Panels
+    */
     {
         "key": "cmd+k cmd+e",
         "command": "workbench.view.explorer"
@@ -31,9 +31,9 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
 
-    /**
-    * File explorer
-    **/
+    /*
+        File explorer
+    */
     {
         "key": "cmd+d",
         "command": "duplicate.execute",
@@ -48,5 +48,50 @@
         "key": "shift+cmd+n",
         "command": "explorer.newFolder",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+
+    /*
+        Emmet
+    */
+    {
+        "key": "cmd+e cmd+i",
+        "command": "editor.emmet.action.balanceIn"
+      },
+      {
+        "key": "cmd+e cmd+o",
+        "command": "editor.emmet.action.balanceOut"
+      },
+      {
+        "key": "cmd+e cmd+e",
+        "command": "editor.emmet.action.matchTag"
+      },
+      {
+        "key": "cmd+e cmd+d",
+        "command": "editor.emmet.action.removeTag"
+      },
+      {
+        "key": "cmd+e cmd+w",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+      },
+
+    /*
+        IntelliSense
+    */
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "cmd+shift+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+k cmd+enter",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+	{
+        "key": "cmd+k cmd+i",
+        "command": "namespaceResolver.import"
     }
 ]
