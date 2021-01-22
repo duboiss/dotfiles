@@ -40,7 +40,7 @@
 	sl = stash list
 	sp = stash pop
 	ss = stash save -u
-	st = status
+	st = status -s
 	tags = tag -l
 	unstage = reset HEAD --
 	whoami = !git config user.name && git config user.email
