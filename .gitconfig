@@ -18,7 +18,8 @@
 [alias]
 	aliases = config --get-regexp alias
 	bip = for-each-ref --sort='authordate:iso8601' --format='%(color:green)%(authordate:relative)%09%(color:yellow)%(refname:short)%(color:white) / %(color:yellow)%(objectname:short) %(color:white)%(contents:subject)' refs/heads
-	br = branch -v
+	br = branch --sort=-committerdate -v
+	brr = branch --sort=-committerdate -vv
 	branches = branch --all
 	cb = checkout -b
 	ci = commit
