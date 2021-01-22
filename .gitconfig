@@ -30,6 +30,7 @@
 	difff = diff ':(exclude)composer.lock' ':(exclude)package-lock.json' ':(exclude)yarn.lock'
 	lc = log -1 HEAD --stat
 	lg = log --oneline
+	ls = log --stat
 	nuke =  !git clean -df && git reset --hard
 	pf = push -f
 	pfl = push --force-with-lease
