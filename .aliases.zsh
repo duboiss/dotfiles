@@ -37,6 +37,13 @@ alias dpsa="docker ps -a"
 alias dpse="docker ps --filter="status=exited""
 alias dr="docker run"
 
+alias dn="docker network"
+alias dnc="docker network create"
+alias dni="docker network inspect"
+alias dnls="docker network ls"
+alias dnp="docker network prune"
+alias dnrm="docker network rm"
+
 alias dv="docker volume"
 alias dvc="docker volume create"
 alias dvi="docker volume inspect"
