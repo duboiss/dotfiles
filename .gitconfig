@@ -65,3 +65,5 @@
 	branch = false
 	diff = "delta --plus-color=\"#728562\" --minus-color=\"#85434a\" --theme='Nord'"
 
+[pull]
+	rebase = true
