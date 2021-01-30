@@ -7,7 +7,7 @@
 	autocrlf = input
 	excludesfile = ~/.gitignore
 
-[commit] 
+[commit]
 	#gpgsign = true
 
 [color "status"]
@@ -43,6 +43,7 @@
 	ss = stash save -u
 	st = status -s
 	tags = tag -l
+	up = pull --rebase --autostash
 	unstage = reset HEAD --
 	whoami = !git config user.name && git config user.email
 
@@ -67,3 +68,9 @@
 
 [pull]
 	rebase = true
+
+[rebase]
+	autostash = true
+
+[gitflow "prefix"]
+	versiontag = v
