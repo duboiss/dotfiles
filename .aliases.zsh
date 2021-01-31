@@ -63,4 +63,4 @@ alias symc="symfony console"
 # Specific windows os
 # alias bat="batcat"
 # alias code="/mnt/c/Users/Steven/AppData/Local/Programs/'Microsoft VS Code'/bin/code"
-# alias ipw="ifconfig eth0 | grep 'inet' | cut -d: -f2 | awk '{print \$2}'"
+# alias ipw="hostname -I""
