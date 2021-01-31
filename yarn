@@ -1,0 +1,5 @@
+yarn global add \
+      @gridsome/cli \
+      @vue/cli \
+      ungit \
+      vsce

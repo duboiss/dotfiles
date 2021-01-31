@@ -11,6 +11,7 @@ Cross-platform dotfiles
 - Nano: .nanorc
 - Visual Studio code: settings.json, keybindings.json, extensions.txt
 - Windows Terminal: settings.json
+- Yarn global packages
 
 ## MacOS
 - Brewfile
