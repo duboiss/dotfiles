@@ -4,6 +4,8 @@ set autoindent
 #set constantshow
 set indicator
 #set linenumbers
+set markmatch
+set minibar
 set mouse
 set smarthome
 set softwrap
