@@ -13,6 +13,14 @@ set tabsize 4
 #set tabstospaces
 set trimblanks
 
+# Binding
+bind ^G gotoline main
+bind ^H help main
+bind ^Y redo main
+bind ^R replace main
+bind ^Z undo main
+bind ^F whereis main
+
 # Colors
 set functioncolor white
 set keycolor white
