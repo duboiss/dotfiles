@@ -4,7 +4,7 @@ alias path="print -l $path" # Print each PATH entry on a separate line
 alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
-alias ll="exa -la --group-directories-first --icons"
+alias ll="exa -la --group-directories-first --icons --no-filesize"
 
 alias go="take" # oh-my-zsh specific
 alias rmrf="rm -rf"
@@ -61,6 +61,5 @@ alias sym="symfony"
 alias symc="symfony console"
 
 # Specific windows os
-# alias bat="batcat"
 # alias code="/mnt/c/Users/Steven/AppData/Local/Programs/'Microsoft VS Code'/bin/code"
 # alias ipw="hostname -I""
