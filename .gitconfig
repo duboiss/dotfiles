@@ -29,6 +29,7 @@
 	co = checkout
 	contributors = shortlog --summary --email --numbered
 	difff = diff ':(exclude)composer.lock' ':(exclude)package-lock.json' ':(exclude)yarn.lock'
+	graph = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %Cblue<%an>%Creset'
 	lc = log -1 HEAD --stat
 	lg = log --oneline
 	ls = log --stat
