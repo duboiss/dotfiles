@@ -62,4 +62,4 @@ alias symc="symfony console"
 
 # Specific windows os
 # alias code="/mnt/c/Users/Steven/AppData/Local/Programs/'Microsoft VS Code'/bin/code"
-# alias ipw="hostname -I""
+# alias ipw="hostname -I"
