@@ -6,6 +6,8 @@ alias mv="mv -iv"
 alias mkdir="mkdir -vp"
 alias ll="exa -la --group-directories-first --icons --no-filesize"
 
+alias zshconfig="nano ~/.zshrc"
+alias reload="source ~/.zshrc"
 alias go="take" # oh-my-zsh specific
 alias rmrf="rm -rf"
 alias q="cd ~ && clear"
