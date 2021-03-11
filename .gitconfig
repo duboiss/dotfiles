@@ -24,6 +24,7 @@
 	cb = checkout -b
 	ci = commit
 	cl = clone
+	clb = clone -b
 	cm = checkout master
 	cn = rev-list --count HEAD
 	co = checkout
