@@ -10,7 +10,14 @@ conda_env() {
     fi
 }
 
-PROMPT='
- %{$fg_bold[green]%}%3c%{$reset_color%}$(git_prompt_info)$(conda_env)
- %{$fg_bold[blue]%}ᨂ %{$reset_color%}'
+shell_level() {
+    if [ $SHLVL -gt 1 ]
+    then
+        print -n "%{$fg_bold[blue]%}$SHLVL%{$reset_color%} > "
+    fi
+}
 
+PROMPT='
+ $(shell_level)%{$fg_bold[green]%}%3c%{$reset_color%}$(git_prompt_info)$(conda_env)
+ %{$fg_bold[blue]%}ᨂ %{$reset_color%}'
+ 
