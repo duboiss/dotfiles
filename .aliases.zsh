@@ -24,13 +24,14 @@ clone() {
 # Docker
 
 # Remove all images, containers, networks, volumes and build cache
-alias doclear="docker stop $(docker ps -a -q) && docker system prune -a  --volumes"
+alias doclear="docker stop $(docker ps -a -q) && docker system prune -a --volumes"
 
 alias dc="docker-compose"
 alias dcb="docker-compose build"
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
 alias dce="docker-compose exec"
+alias dcl="docker-compose logs"
 alias dcp="docker-compose pull"
 alias dcps="docker-compose ps"
 alias dcr="docker-compose run"
