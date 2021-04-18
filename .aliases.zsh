@@ -35,6 +35,7 @@ alias dcl="docker-compose logs"
 alias dcp="docker-compose pull"
 alias dcps="docker-compose ps"
 alias dcr="docker-compose run"
+alias dcre="docker-compose restart"
 
 alias dcls="docker container ls"
 alias di="docker images"
