@@ -47,7 +47,7 @@
 	ss = stash save -u
 	st = status -s
 	tags = tag -l
-	up = pull --rebase --autostash
+	up = pull --prune --rebase --autostash
 	unstage = reset HEAD --
 	whoami = !git config user.name && git config user.email
 
