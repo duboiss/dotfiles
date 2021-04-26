@@ -70,6 +70,7 @@
 	branch = false
 	stash = false
 	diff = "delta --plus-color=\"#728562\" --minus-color=\"#85434a\" --theme='Nord'"
+	tag = false
 
 [pull]
 	rebase = true
