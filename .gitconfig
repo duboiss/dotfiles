@@ -17,6 +17,7 @@
 
 [alias]
 	aliases = config --get-regexp alias
+	ba = branch -a
 	bm = branch -m
 	bd = branch -D
 	bip = for-each-ref --sort='authordate:iso8601' --format='%(color:green)%(authordate:relative)%09%(color:yellow)%(refname:short)%(color:white) / %(color:yellow)%(objectname:short) %(color:white)%(contents:subject)' refs/heads
@@ -30,26 +31,31 @@
 	cm = checkout master
 	cn = rev-list --count HEAD
 	co = checkout
+	conflicts = diff --name-only --diff-filter=U
 	contributors = shortlog --summary --email --numbered
 	difff = diff ':(exclude)composer.lock' ':(exclude)package-lock.json' ':(exclude)yarn.lock'
-	graph = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %Cblue<%an>%Creset'
+	graph = log --graph --pretty=format:'%C(auto) %h | %s | %an | %ar%d'
+	lb = cherry -v master
 	lc = log -1 HEAD --stat
 	lg = log --oneline
+	ln = log -n
 	ls = log --stat
 	nuke =  !git clean -df && git reset --hard
-	pf = push -f
-	pfl = push --force-with-lease
+	pf = push --force-with-lease
 	rb = rebase origin/master
 	remotes = remote -v
 	rl = reflog
 	sl = stash list
 	sp = stash pop
-	ss = stash save -u
+	ss = stash -u
 	st = status -s
 	tags = tag -l
 	up = pull --prune --rebase --autostash
-	unstage = reset HEAD --
+	unstage = reset HEAD
+	unstageall = reset HEAD --
+	untrack = rm --cached -r
 	whoami = !git config user.name && git config user.email
+	zip = archive master --format=zip --output=master.zip
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
