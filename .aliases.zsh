@@ -5,6 +5,7 @@ alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
 alias ll="exa -la --group-directories-first --icons --no-filesize"
+alias llt="ll --tree"
 
 alias zshconfig="nano ~/.zshrc"
 alias reload="source ~/.zshrc"
