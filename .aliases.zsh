@@ -4,8 +4,10 @@ alias path="print -l $path" # Print each PATH entry on a separate line
 alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
+
+alias ls="exa --group-directories-first --icons"
 alias ll="exa -la --group-directories-first --icons --no-filesize"
-alias llt="ll --tree"
+alias lt="ll --tree --level=2"
 
 alias zshconfig="nano ~/.zshrc"
 alias reload="source ~/.zshrc"
