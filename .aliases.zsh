@@ -19,9 +19,17 @@ alias ws="cd ~/workspace"
 alias n="nano"
 
 calc() { awk "BEGIN{print $*}"; }
-clone() {
-  git clone "$@"
-  cd "$(basename "${1%.*}")" || exit
+
+function gcd {
+  REPO=$1
+  CLONEPATH=$2
+
+  if [ -z "$CLONEPATH" ]; then
+      CLONEPATH=${$(basename "$REPO")/.git/}
+  fi
+
+  git clone "$REPO" $CLONEPATH
+  cd $CLONEPATH || exit
 }
 
 # Docker
