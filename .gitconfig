@@ -24,13 +24,10 @@
 	br = branch --sort=-committerdate -v
 	brr = branch --sort=-committerdate -vv
 	branches = branch --all
-	cb = checkout -b
 	ci = commit
 	cl = clone
 	clb = clone -b
-	cm = checkout master
 	cn = rev-list --count HEAD
-	co = checkout
 	conflicts = diff --name-only --diff-filter=U
 	contributors = shortlog --summary --email --numbered
 	deindex = restore --worktree
@@ -42,6 +39,7 @@
 	lg = log --oneline
 	ln = log -n
 	ls = log --stat
+	m = switch master
 	nuke =  !git clean -df && git reset --hard
 	pf = push --force-with-lease
 	rb = rebase origin/master
@@ -63,7 +61,7 @@
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
 	# Switch to a branch, creating it if necessary
-	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+	go = "!f() { git switch -c \"$1\" 2> /dev/null || git switch \"$1\"; }; f"
 
 	# Interactive rebase with the given number of latest commits
 	rbi = "!r() { git rebase -i HEAD~$1; }; r"
