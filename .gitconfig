@@ -33,6 +33,8 @@
 	co = checkout
 	conflicts = diff --name-only --diff-filter=U
 	contributors = shortlog --summary --email --numbered
+	deindex = restore --worktree
+	deindexall = restore --worktree .
 	difff = diff ':(exclude)composer.lock' ':(exclude)package-lock.json' ':(exclude)yarn.lock'
 	graph = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %Cblue<%an>%Creset'
 	lb = cherry -v master
@@ -51,8 +53,8 @@
 	st = status -s
 	tags = tag -l
 	up = pull --prune --rebase --autostash
-	unstage = reset HEAD
-	unstageall = reset HEAD --
+	unstage = restore --staged # or reset HEAD <file> for git versions lower than 2.23
+	unstageall = restore --staged . # or reset HEAD for git versions lower than 2.23
 	untrack = rm --cached -r
 	whoami = !git config user.name && git config user.email
 	zip = archive master --format=zip --output=master.zip
