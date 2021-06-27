@@ -66,6 +66,17 @@
 	# Interactive rebase with the given number of latest commits
 	rbi = "!r() { git rebase -i HEAD~$1; }; r"
 
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = red
+	upstream = red
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+
 [log]
         abbrevCommit = true
 
