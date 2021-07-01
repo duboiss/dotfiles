@@ -42,7 +42,7 @@
 	rl = reflog
 	sl = stash list
 	sp = stash pop
-	ss = stash -u
+	ss = stash save -u
 	st = status -s
 	tags = tag -l
 	up = pull --prune --rebase --autostash
