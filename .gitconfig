@@ -40,6 +40,7 @@
 	rb = rebase origin/master
 	remotes = remote -v
 	rl = reflog
+	sd = stash drop
 	sl = stash list
 	sp = stash pop
 	ss = stash save -u
