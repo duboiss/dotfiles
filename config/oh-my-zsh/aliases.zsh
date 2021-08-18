@@ -1,6 +1,3 @@
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias path="print -l $path" # Print each PATH entry on a separate line
-
 alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
@@ -12,28 +9,16 @@ alias lt="ll --tree --level=2"
 # Misc
 alias go="take" # oh-my-zsh specific
 alias hostfile="nano /etc/hosts"
-alias q="cd ~ && clear"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias path="print -l $path" # Print each PATH entry on a separate line
 alias publickey="cat ~/.ssh/id_rsa.pub"
+alias q="cd ~ && clear"
 alias reload="source ~/.zshrc"
 alias rmrf="rm -rf"
 alias ws="cd ~/workspace"
 alias zshconfig="nano ~/.zshrc"
 
 alias n="nano"
-
-calc() { awk "BEGIN{print $*}"; }
-
-function gcd {
-  REPO=$1
-  CLONEPATH=$2
-
-  if [ -z "$CLONEPATH" ]; then
-      CLONEPATH=${$(basename "$REPO")/.git/}
-  fi
-
-  git clone "$REPO" $CLONEPATH
-  cd $CLONEPATH || exit
-}
 
 # Docker
 

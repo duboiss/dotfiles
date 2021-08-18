@@ -5,21 +5,20 @@
 Cross-platform dotfiles
 </div>
 
-## Files
-- .bin: custom commands
+## Configurations
 - Aliases
-- Git: .gitconfig and global .gitignore
-- Oh-my-zsh: nord theme
-- Visual Studio code: settings.json, keybindings.json, extensions.txt
-- Windows Terminal: settings.json
-- Yarn global packages
+- Oh-my-zsh
+- Package lists
+- Visual Studio code
+- Windows Terminal
+
+### Packages configuration
+- Git
+- Nano
+- Tig
 
 ## MacOS
 - Brewfile
-
-### Packages
-- Nano
-- Tig
 
 ## Recommandations
 - [Awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
