@@ -9,12 +9,15 @@ alias ls="exa --group-directories-first --icons"
 alias ll="exa -la --group-directories-first --icons --no-filesize"
 alias lt="ll --tree --level=2"
 
-alias zshconfig="nano ~/.zshrc"
-alias reload="source ~/.zshrc"
+# Misc
 alias go="take" # oh-my-zsh specific
-alias rmrf="rm -rf"
+alias hostfile="nano /etc/hosts"
 alias q="cd ~ && clear"
+alias publickey="cat ~/.ssh/id_rsa.pub"
+alias reload="source ~/.zshrc"
+alias rmrf="rm -rf"
 alias ws="cd ~/workspace"
+alias zshconfig="nano ~/.zshrc"
 
 alias n="nano"
 
