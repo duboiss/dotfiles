@@ -7,6 +7,7 @@ Cross-platform dotfiles
 
 ## Configurations
 - Aliases
+- iTerm2
 - Oh-my-zsh
 - Package lists
 - Visual Studio code
