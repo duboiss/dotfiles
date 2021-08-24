@@ -31,9 +31,10 @@
         Languages
     */
     "emmet.includeLanguages": {
-        "twig": "html"
+        "blade": "html",
+        "twig": "html",
+        "vue": "html",
     },
-    "php.suggest.basic": false,
 
     /*
         Telemetry
@@ -53,6 +54,7 @@
         Extensions
     */
     "php-docblocker.returnGap": true,
+    "namespaceResolver.sortAlphabetically": true,
 
     /*
         Windows OS
