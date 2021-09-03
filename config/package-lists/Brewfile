@@ -1,3 +1,4 @@
+tap "cantino/mcfly"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "shivammathur/php"
@@ -32,6 +33,8 @@ brew "httpie"
 brew "jq"
 # Utility for directing compilation
 brew "make"
+# McFly
+brew "cantino/mcfly/mcfly"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Open source relational database management system
