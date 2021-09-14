@@ -27,6 +27,8 @@ brew "git"
 brew "git-delta"
 # Open-source GitLab command-line tool
 brew "glab"
+# Uses CSS selectors to extract bits content from HTML files
+brew "htmlq"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Lightweight and flexible command-line JSON processor
@@ -51,6 +53,7 @@ brew "tig"
 brew "tokei"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# JavaScript toolchain manager for reproducible environments
 brew "volta"
 # Internet file retriever
 brew "wget"
