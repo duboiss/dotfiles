@@ -1,8 +1,12 @@
-tap "cantino/mcfly"
 tap "homebrew/bundle"
 tap "homebrew/core"
+
+tap "cantino/mcfly"
+tap "hashicorp/tap"
 tap "shivammathur/php"
 
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -35,8 +39,6 @@ brew "httpie"
 brew "jq"
 # Utility for directing compilation
 brew "make"
-# McFly
-brew "cantino/mcfly/mcfly"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Open source relational database management system
@@ -61,5 +63,15 @@ brew "wget"
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
+# McFly
+brew "cantino/mcfly/mcfly"
+# Packer
+brew "hashicorp/tap/packer"
 # General-purpose scripting language
 brew "shivammathur/php/php@7.4"
+brew "shivammathur/php/php@8.0"
+brew "shivammathur/php/php@8.1"
+# The tfswitch command lets you switch between terraform versions.
+brew "warrensbox/tap/tfswitch"
+# The tgswitch command lets you switch between terragrunt versions.
+brew "warrensbox/tap/tgswitch"
