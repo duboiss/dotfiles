@@ -15,17 +15,20 @@
     "window.nativeFullScreen": false,
     "window.newWindowDimensions": "inherit",
 
+
     /*
         Less bulky
     */
     "breadcrumbs.enabled": false,
+
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
+
     "explorer.openEditors.visible": 0,
-    "extensions.ignoreRecommendations": false,
+
     "workbench.activityBar.visible": false,
-    "workbench.editor.showTabs": false,
-    "workbench.statusBar.visible": true,
+    "workbench.statusBar.visible": false,
+
 
     /*
         Languages
@@ -36,25 +39,39 @@
         "vue": "html",
     },
 
+
+    /*
+        Personal preferences
+    */
+    "editor.accessibilitySupport": "off",
+    "editor.fontLigatures": true,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "onFocusChange",
+    "workbench.sideBar.location": "right",
+
+
     /*
         Telemetry
     */
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
 
-    /*
-        Personal preferences
-    */
-    "editor.fontLigatures": true,
-    "editor.wordWrap": "on",
-    "terminal.integrated.fontFamily": "SourceCodePro Powerline",
-    "workbench.sideBar.location": "right",
 
+    /*
+        Terminal
+    */
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "FuraCode NF",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.scrollback": 2500,
+
+    
     /*
         Extensions
     */
     "php-docblocker.returnGap": true,
     "namespaceResolver.sortAlphabetically": true,
+
 
     /*
         Windows OS
