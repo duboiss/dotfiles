@@ -15,6 +15,8 @@ brew "bat"
 brew "composer"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Command-line DNS client
+brew "dog"
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'
