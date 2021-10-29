@@ -46,7 +46,7 @@
 	ss = stash save -u
 	st = status -s
 	tags = tag -l
-	up = pull --prune --rebase --autostash
+	up = !sh -c 'git pull --rebase --prune --no-stat --autostash && git --no-pager log --pretty=format:\"%C(yellow)%h %Creset %s %Creset (%an)\" HEAD@{1}.. && echo ""'
 	unstage = restore --staged # or reset HEAD <file> for git versions lower than 2.23
 	unstageall = restore --staged . # or reset HEAD for git versions lower than 2.23
 	untrack = rm --cached -r
@@ -58,6 +58,9 @@
 
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git switch -c \"$1\" 2> /dev/null || git switch \"$1\"; }; f"
+
+	# Delete merged branches
+  	merged = "!f() { git branch --merged ${1:-master} | egrep -v \"(^\\*|${1:-master}|development)\" | xargs git branch -d; };f"
 
 	# Interactive rebase with the given number of latest commits
 	rbi = "!r() { git rebase -i HEAD~$1; }; r"
