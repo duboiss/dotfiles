@@ -49,6 +49,8 @@ brew "mysql"
 brew "nano"
 # General-purpose scripting language
 brew "php"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Very fast implementation of tldr in Rust
 brew "tealdeer"
 # Text interface for Git repositories
