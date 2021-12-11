@@ -1,6 +1,8 @@
+# Simple computations
 calc() { awk "BEGIN{print $*}"; }
 
-function gcd {
+# Git clone and cd into it
+gcd() {
   REPO=$1
   CLONEPATH=$2
 
@@ -11,3 +13,15 @@ function gcd {
   git clone "$REPO" $CLONEPATH
   cd $CLONEPATH || exit
 }
+
+# Create a folder and move into it in one command
+mkcd() { mkdir -p "$@" && cd "$_"; }
+
+# File search functions
+f() { find . -iname "*$1*" ${@:2} }
+r() { grep "$1" ${@:2} -R . }
+
+### MacOS
+
+# Man page in the preview app
+manpdf() { man -t $@ | open -f -a Preview }
