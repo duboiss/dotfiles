@@ -37,10 +37,12 @@
 	m = switch master
 	nuke =  !git clean -df && git reset --hard
 	pf = push --force-with-lease
+	po = push origin
 	rb = rebase origin/master
 	remotes = remote -v
 	rl = reflog
 	sd = stash drop
+	shoot = push origin --delete
 	sl = stash list
 	sp = stash pop
 	ss = stash save -u
