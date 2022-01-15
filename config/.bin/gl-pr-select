@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 if [ -d "./.git" ]; then
-  id="$(glab mr list -P 30 | fzf | cut -f1)";
+  id="$(glab mr list -P 30 | fzf --height 40% | cut -f1)";
   [ -n "$id" ] && glab mr checkout "$id"
 else
   echo "Error: there's no .git dir"

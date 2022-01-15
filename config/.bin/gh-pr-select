@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 if [ -d "./.git" ]; then
-  id="$(gh pr list -L 30 | fzf | cut -f1)";
+  id="$(gh pr list -L 30 | fzf --height 40% | cut -f1)";
   [ -n "$id" ] && gh pr checkout "$id"
 else
   echo "Error: there's no .git dir"
