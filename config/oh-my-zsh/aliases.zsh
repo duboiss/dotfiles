@@ -62,6 +62,13 @@ dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/[
 dstop() { docker stop $(docker ps -a -q); }
 
 # PHP
+changephp() {
+  if [[ -n "$1" ]]; then
+    brew link --overwrite --force shivammathur/php/php@"$1"
+  else
+    brew unlink php && brew link php
+  fi
+}
 alias compo="XDEBUG_MODE=off \composer"
 alias compog="XDEBUG_MODE=off \composer global"
 alias compor="XDEBUG_MODE=off \composer recipes"

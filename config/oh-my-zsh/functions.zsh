@@ -21,6 +21,12 @@ mkcd() { mkdir -p "$@" && cd "$_"; }
 f() { find . -iname "*$1*" ${@:2} }
 r() { grep "$1" ${@:2} -R . }
 
+# Misc
+cleanmypc() {
+  brew autoremove
+  brew cleanup
+}
+
 ### MacOS
 
 # Man page in the preview app
