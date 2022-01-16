@@ -5,13 +5,13 @@
 Cross-platform dotfiles
 </div>
 
-## Configurations
-- Aliases
-- iTerm2
-- Oh-my-zsh
+## Global configuration
+- Aliases & functions
+- Brewfile
+- Oh-my-zsh theme
 - Package lists
-- Visual Studio code
-- Windows Terminal
+- Visual Studio code (settings + keybindings + extensions)
+- Yarn global packages
 
 ### Packages configuration
 - Git
@@ -19,7 +19,12 @@ Cross-platform dotfiles
 - Tig
 
 ## MacOS
-- Brewfile
+- Settings
+- iTerm2
+
+## Windows
+- Windows Terminal
+- Winget packages (with winstall generator)
 
 ## Recommandations
 - [Awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
