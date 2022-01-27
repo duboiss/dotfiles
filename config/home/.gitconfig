@@ -29,7 +29,6 @@
 	deindexall = restore --worktree .
 	difff = diff ':(exclude)composer.lock' ':(exclude)package-lock.json' ':(exclude)yarn.lock'
 	graph = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %Cblue<%an>%Creset'
-	lb = cherry -v master
 	lc = log -1 HEAD --stat
 	lg = log --oneline
 	ln = log -n
@@ -40,7 +39,6 @@
 	po = push origin
 	rb = rebase origin/master
 	remotes = remote -v
-	rl = reflog
 	sd = stash drop
 	shoot = push origin --delete
 	sl = stash list
@@ -53,7 +51,6 @@
 	unstageall = restore --staged . # or reset HEAD for git versions lower than 2.23
 	untrack = rm --cached -r
 	whoami = !git config user.name && git config user.email
-	zip = archive master --format=zip --output=master.zip
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
