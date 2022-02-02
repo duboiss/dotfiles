@@ -10,7 +10,7 @@ alias lt="ll --tree --level=2"
 alias go="take" # oh-my-zsh specific
 alias hostfile="nano /etc/hosts"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias path="print -l $path" # Print each PATH entry on a separate line
+alias path="echo -e ${PATH//:/\\n} | sort --unique" # Print each PATH entry on a separate line
 alias publickey="cat ~/.ssh/id_rsa.pub"
 alias q="cd ~ && clear"
 alias reload="source ~/.zshrc"
@@ -62,13 +62,6 @@ dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/[
 dstop() { docker stop $(docker ps -a -q); }
 
 # PHP
-changephp() {
-  if [[ -n "$1" ]]; then
-    brew link --overwrite --force shivammathur/php/php@"$1"
-  else
-    brew unlink php && brew link php
-  fi
-}
 alias compo="XDEBUG_MODE=off \composer"
 alias compog="XDEBUG_MODE=off \composer global"
 alias compor="XDEBUG_MODE=off \composer recipes"

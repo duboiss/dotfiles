@@ -27,6 +27,16 @@ cleanmypc() {
   brew cleanup
 }
 
+# PHP
+changephp() {
+  if [[ -n "$1" ]]; then
+    brew link --overwrite --force shivammathur/php/php@"$1"
+  else
+    brew unlink php && brew link php
+  fi
+}
+
+
 ### MacOS
 
 # Man page in the preview app
