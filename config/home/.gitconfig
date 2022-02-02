@@ -35,6 +35,7 @@
 	ls = log --stat
 	m = switch master
 	nuke =  !git clean -df && git reset --hard
+	oops = git commit --all --amend --no-edit
 	pf = push --force-with-lease
 	po = push origin
 	rb = rebase origin/master
