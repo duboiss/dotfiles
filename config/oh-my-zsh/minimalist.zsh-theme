@@ -1,3 +1,4 @@
+# Based on https://github.com/TyWR/Nord-zsh
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[white]%} on %{$fg_bold[yellow]%}\xee\x82\xa0 "
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_bold[yellow]%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$reset_color%}%{$fg_bold[red]%}*%{$reset_color%}"
