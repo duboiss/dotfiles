@@ -25,4 +25,10 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 echo "Finder: allow Allow quitting Finder via ⌘ + Q" # doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
+echo "Finder: display full POSIX path as window title"
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+echo "Finder: disable the warning when changing a file extension"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
 killall Finder

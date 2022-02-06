@@ -36,4 +36,11 @@ defaults write com.apple.dock show-process-indicators -bool true
 echo "Dock: hide 'recent applications'"
 defaults write com.apple.dock show-recents -bool false
 
+# System Preferences > Mission Control > Hot Corners
+echo "Dock: disable hot corners"
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
+
 killall Dock
