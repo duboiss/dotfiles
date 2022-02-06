@@ -35,7 +35,7 @@
 	ls = log --stat
 	m = switch master
 	nuke =  !git clean -df && git reset --hard
-	oops = git commit --all --amend --no-edit
+	oops = commit --all --amend --no-edit
 	pf = push --force-with-lease
 	po = push origin
 	rb = rebase origin/master
@@ -65,6 +65,32 @@
 	# Interactive rebase with the given number of latest commits
 	rbi = "!r() { git rebase -i HEAD~$1; }; r"
 
+[log]
+        abbrevCommit = true
+
+[diff]
+	noprefix = true
+
+[pager]
+	branch = false
+	diff = delta
+	stash = false
+	tag = false
+
+[pull]
+	rebase = true
+
+[rebase]
+	autostash = true
+
+# Custom plugins
+[delta]
+	syntax-theme = Nord
+	plus-style = "#728562"
+	minus-style = "#85434a"
+    	side-by-side = true
+
+# Styling
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -75,24 +101,3 @@
 	added = green
 	changed = yellow
 	untracked = red
-
-[log]
-        abbrevCommit = true
-
-[diff]
-	noprefix = true
-
-[pager]
-	branch = false
-	stash = false
-	diff = "delta --plus-style=\"#728562\" --minus-style=\"#85434a\" --theme='Nord'"
-	tag = false
-
-[pull]
-	rebase = true
-
-[rebase]
-	autostash = true
-
-[gitflow "prefix"]
-	versiontag = v
