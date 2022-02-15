@@ -1,11 +1,16 @@
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/core"
 
 tap "cantino/mcfly"
 tap "hashicorp/tap"
+tap "mutagen-io/mutagen"
 tap "shivammathur/php"
 tap "symfony-cli/tap"
+tap "warrensbox/tap"
 
+# Automate deployment, configuration, and upgrading
+brew "ansible"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -36,40 +41,41 @@ brew "git-delta"
 brew "glab"
 # Uses CSS selectors to extract bits content from HTML files
 brew "htmlq"
-# User-friendly cURL replacement (command-line HTTP client)
-brew "httpie"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Utility for directing compilation
 brew "make"
-# Simple tool to make locally trusted development certificates
-brew "mkcert"
-# Open source relational database management system
-brew "mysql"
+# Mac App Store command-line interface
+brew "mas"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Modern replacement for ps written by Rust
+brew "procs"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Very fast implementation of tldr in Rust
 brew "tealdeer"
-# Text interface for Git repositories
-brew "tig"
 # Program that allows you to count code, quickly
 brew "tokei"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
 # JavaScript toolchain manager for reproducible environments
 brew "volta"
 # Internet file retriever
 brew "wget"
+# Friendly and fast tool for sending HTTP requests
+brew "xh"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
+
 # McFly
 brew "cantino/mcfly/mcfly"
 # Packer
 brew "hashicorp/tap/packer"
+# Fast file synchronization and network forwarding for remote development
+brew "mutagen-io/mutagen/mutagen"
 # General-purpose scripting language
 brew "shivammathur/php/php"
 brew "shivammathur/php/php@8.0"
@@ -80,3 +86,46 @@ brew "symfony-cli/tap/symfony-cli"
 brew "warrensbox/tap/tfswitch"
 # The tgswitch command lets you switch between terragrunt versions.
 brew "warrensbox/tap/tgswitch"
+
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
+cask "background-music"
+# Replacement of the default battery indicator in the menu bar
+cask "battery-buddy"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Reimagine your terminal
+cask "fig"
+# Web browser
+cask "firefox"
+# Web browser
+cask "google-chrome"
+# HTTP and GraphQL Client
+cask "insomnia"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
+# Office suite
+cask "libreoffice"
+# App to write, plan, collaborate, and get organized
+cask "notion"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Team communication and collaboration software
+cask "slack"
+# Collection of apps available by subscription
+cask "setapp"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+
+mas "Amphetamine", id: 937984704
+mas "Meeter", id: 1510445899
+mas "Parcel", id: 639968404
+mas "Xcode", id: 497799835
