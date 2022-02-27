@@ -62,9 +62,8 @@ dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/[
 dstop() { docker stop $(docker ps -a -q); }
 
 # PHP
-alias compo="XDEBUG_MODE=off \composer"
-alias compog="XDEBUG_MODE=off \composer global"
-alias compor="XDEBUG_MODE=off \composer recipes"
+alias compo="COMPOSER_MEMORY_LIMIT=-1 XDEBUG_MODE=off composer"
+alias compog="COMPOSER_MEMORY_LIMIT=-1 XDEBUG_MODE=off composer global"
 alias sym="symfony"
 alias symc="symfony console"
 
