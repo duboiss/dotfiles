@@ -9,3 +9,6 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 echo "Printer: automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+echo "Screenshots: store in /tmp"
+defaults write com.apple.screencapture location /tmp
