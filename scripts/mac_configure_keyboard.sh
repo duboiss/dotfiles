@@ -32,4 +32,4 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # System Preferences > Keyboard > Shortcuts > Spotlight > Show spotlight search
 echo "Keyboard: disable cmd+space shortcut for spotlight (in order to use Raycasts), takes effect after the logout"
-/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false" ?
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false"
