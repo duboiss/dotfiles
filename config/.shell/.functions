@@ -30,9 +30,14 @@ cleanmypc() {
 # PHP
 changephp() {
   if [[ -n "$1" ]]; then
-    brew link --overwrite --force shivammathur/php/php@"$1"
+    if ! brew link --overwrite --force shivammathur/php/php@"$1"; then
+      brew install shivammathur/php/php@"$1"
+      brew link --overwrite --force shivammathur/php/php@"$1"
+    fi
   else
-    brew unlink php && brew link php
+    if ! (brew unlink php && brew link php); then
+      brew install shivammathur/php/php
+    fi
   fi
 }
 
