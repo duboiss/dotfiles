@@ -20,7 +20,6 @@
 	brr = branch --sort=-committerdate -vv
 	branches = branch --all
 	ci = commit
-	cl = clone
 	clb = clone -b
 	cn = rev-list --count HEAD
 	conflicts = diff --name-only --diff-filter=U
