@@ -89,7 +89,6 @@ brew "warrensbox/tap/tgswitch"
 
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
-cask "background-music"
 # Replacement of the default battery indicator in the menu bar
 cask "battery-buddy"
 # Voice and text chat software
@@ -128,4 +127,3 @@ cask "vlc"
 mas "Amphetamine", id: 937984704
 mas "Meeter", id: 1510445899
 mas "Parcel", id: 639968404
-mas "Xcode", id: 497799835
