@@ -1,5 +1,6 @@
 export EDITOR=nano
 export BAT_THEME="Nord"
+export WORKSPACE="$HOME/workspace"
 
 # Add .bin directory to path
 export PATH="$HOME/.bin:$PATH"
