@@ -9,7 +9,6 @@ ZSH_THEME="minimalist"
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
-	alias-tips
 	colored-man-pages
 	docker
 	web-search
