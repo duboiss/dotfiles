@@ -10,7 +10,6 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(
 	colored-man-pages
-	docker
 	web-search
 	yarn
 	zsh-autosuggestions
