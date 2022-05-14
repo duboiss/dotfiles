@@ -46,6 +46,7 @@
 	ss = stash save -u
 	st = status -s
 	tags = tag -l
+	undo = reset HEAD~1 --soft
 	up = !sh -c 'git pull --rebase --prune --no-stat --autostash && git --no-pager log --reverse --pretty=format:\"%C(yellow)%h %Creset %s %Creset (%an)\" HEAD@{1}.. && echo ""'
 	unstage = restore --staged # or reset HEAD <file> for git versions lower than 2.23
 	unstageall = restore --staged . # or reset HEAD for git versions lower than 2.23
