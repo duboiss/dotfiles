@@ -24,7 +24,7 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER=sdu
 ZSH_DISABLE_COMPFIX=true
 
-[ -f $HOME/.shell/.setup ] && source "$HOME/.shell/.setup"
+[ -f $HOME/.shell/.setup.zsh ] && source "$HOME/.shell/.setup.zsh"
 
 eval "$(mcfly init zsh)"
 eval "$(zoxide init zsh)"
