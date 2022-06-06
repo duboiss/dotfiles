@@ -17,3 +17,6 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 echo "Screenshots: store in /tmp"
 defaults write com.apple.screencapture location /tmp
+
+echo "Window: add the ability to move a window with ctrl + cmd + click"
+defaults write -g NSWindowShouldDragOnGesture -bool true   
