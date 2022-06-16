@@ -1,3 +1,6 @@
+###
+### Misc
+###
 # Simple computations
 calc() { awk "BEGIN{print $*}"; }
 
@@ -21,7 +24,7 @@ mkcd() { mkdir -p "$@" && cd "$_"; }
 f() { find . -iname "*$1*" ${@:2} }
 r() { grep "$1" ${@:2} -R . }
 
-# Misc
+# Homebrew cleaning
 cleanmypc() {
   brew autoremove
   brew cleanup
@@ -51,17 +54,26 @@ bup() {
   fi
 }
 
+###
+### Docker
+###
+# Stop all containers
+dstop() { docker stop $(docker ps -a -q); }
+
 # Select docker container(s) to remove
-drm() {
-  docker ps -a | sed 1d | fzf --height 40% -q "$1" --no-sort --multi --tac | awk '{ print $1 }' | xargs -r docker rm
-}
+drm() { docker ps -a | sed 1d | fzf --height 40% --multi --query "$1" | awk '{ print $1 }' | xargs -r docker rm }
 
 # Select docker image(s) to remove
-drmi() {
-  docker images | sed 1d | fzf --height 40% -q "$1" --no-sort --multi --tac | awk '{ print $3 }' | xargs -r docker rmi
-}
+drmi() { docker images | sed 1d | fzf --height 40% --multi --query "$1" | awk '{ print $3 }' | xargs -r docker rmi }
 
-### MacOS
+# Remove all containers named with the given prefix
+drmprefix() { docker ps -aq --filter name="${1}*" | xargs docker stop | xargs docker rm }
 
+# Remove all docker images, containers, networks, volumes and build cache
+dclear() { docker stop $(docker ps -a -q) && docker system prune -a --volumes }
+
+###
+### Mac OS
+###
 # Man page in the preview app
 manpdf() { man -t $@ | open -f -a Preview }
