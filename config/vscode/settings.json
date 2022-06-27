@@ -57,6 +57,7 @@
     /*
         Terminal
     */
+    "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontFamily": "FuraCode NF",
     "terminal.integrated.fontSize": 13,
