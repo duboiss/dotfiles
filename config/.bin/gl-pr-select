@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 if [ -d "./.git" ]; then
-  id="$(glab mr list | fzf --preview 'glab mr view {1}' --height 40% --header-lines 2 --pointer="" | cut -f1)";
+  id="$(glab mr list | fzf --height ~40% --preview 'glab mr view {1}' --header-lines 2 --pointer="" | cut -f1)";
   [ -n "$id" ] && glab mr checkout "$id"
 else
   echo "Error: there's no .git dir"
