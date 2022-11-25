@@ -7,6 +7,12 @@ echo "Files: avoid creating .DS_Store files on network or USB volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
+echo "Files: associate all source code files with VSCode by default"
+# https://alexpeattie.com/blog/associate-source-code-files-with-editor-in-macos-using-duti/
+curl -s "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml" \
+  | yq -r "to_entries | (map(.value.extensions) | flatten) - [null] | unique | .[]" \
+  | xargs -L 1 -I "{}" duti -s com.microsoft.VSCode {} all || true
+
 # System Preferences > Network > Wi-Fi > Advanced > DNS
 # https://www.dnsperf.com/
 echo "Network: use Cloudflare DNS servers for 'Wi-Fi' network service"
