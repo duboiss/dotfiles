@@ -25,6 +25,8 @@ brew "curl"
 brew "dog"
 # More intuitive version of du in rust
 brew "dust"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -63,6 +65,8 @@ brew "volta"
 brew "wget"
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
+# Process YAML documents from the CLI
+brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
