@@ -46,6 +46,7 @@ changephp() {
 
 # mnemonic [B]rew [U]pdate [P]ackage
 bup() {
+  brew update
   local upd=$(brew outdated | fzf --height 40% --multi)
 
   if [[ $upd ]]; then
