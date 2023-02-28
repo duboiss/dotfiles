@@ -1,10 +1,12 @@
 winget install --id=Google.Chrome -e 
-&& winget install --id=Microsoft.WindowsTerminalPreview -e
+&& winget install --id=Microsoft.WindowsTerminalPreview -e 
 && winget install --id=AnyDeskSoftwareGmbH.AnyDesk -e 
 && winget install --id=NickeManarin.ScreenToGif -e 
 && winget install --id=Mega.MEGASync -e 
 && winget install --id=Notion.Notion -e 
 && winget install --id=QL-Win.QuickLook  -e 
+&& winget install --id=Piriform.Speccy -e 
+&& winget install --id=Microsoft.PowerToys -e 
 
 # Communication
 && winget install --id=Discord.Discord -e 
@@ -16,7 +18,8 @@ winget install --id=Google.Chrome -e
 && winget install --id=Microsoft.VisualStudioCode -e 
 
 # Files
-&& winget install --id=Adobe.AdobeAcrobatReaderDC -e 
+&& winget install --id=SumatraPDF.SumatraPDF -e 
+&& winget install --id=PDFsam.PDFsam -e 
 && winget install --id=VideoLAN.VLC -e 
 && winget install --id=WebTorrent.Desktop -e 
 && winget install --id=RARLab.WinRAR -e 
