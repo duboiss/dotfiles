@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -19,8 +20,26 @@
             "keys": "ctrl+f"
         },
         {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+h"
+        },
+        {
             "command": "closePane",
             "keys": "ctrl+w"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+v"
         },
         {
             "command": 
@@ -30,89 +49,68 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+a"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "vertical",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+v"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "horizontal",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+h"
-        },
+        }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-    "disableAnimations": false,
-    "launchMode": "default",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "profiles": 
     {
-        "defaults": 
-        {
-            "bellStyle": "none"
-        },
+        "defaults": {},
         "list": 
         [
             {
                 "background": "#0B1344",
-                "commandline": "powershell.exe",
                 "font": 
                 {
-                    "size": 11
+                    "size": 11.0
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "PowerShell",
-                "padding": "15",
-                "tabTitle": "Powershell"
+                "padding": "15"
             },
             {
-                "acrylicOpacity": 0.94999999999999996,
                 "background": "#11141D",
-                "commandline": "cmd.exe",
                 "cursorColor": "#FFCC00",
                 "font": 
                 {
-                    "face": "FiraCode Nerd Font Mono",
-                    "size": 11
+                    "face": "Cascadia Mono",
+                    "size": 11.0
                 },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "cmd",
+                "opacity": 95,
                 "padding": "15",
                 "selectionBackground": "#AAAAAA",
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.94999999999999996,
-                "colorScheme": "Nord",
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono",
-                    "size": 11
-                },
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "//wsl$/Ubuntu/home/steven",
-                "useAcrylic": true
+                "name": "Git Bash",
+                "source": "Git"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "colorScheme": "Ubuntu-ColorScheme",
+                "font": 
+                {
+                    "face": "Cascadia Mono",
+                    "size": 11.0
+                },
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "opacity": 95,
+                "source": "Windows.Terminal.Wsl",
+                "useAcrylic": true
             }
         ]
     },
@@ -326,6 +324,29 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -348,5 +369,6 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "themes": []
 }
