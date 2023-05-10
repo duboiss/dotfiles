@@ -3,10 +3,11 @@
 #### END FIG ENV VARIABLES ####
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/sdu/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="minimalist"
 COMPLETION_WAITING_DOTS="true"
+ZSH_COMPDUMP="${ZSH_CACHE_DIR}/.zcompdump-${(%):-%m}-${ZSH_VERSION}"
+ZSH_THEME="minimalist"
 
 plugins=(
 	colored-man-pages
@@ -16,8 +17,6 @@ plugins=(
 	zsh-interactive-cd
 	zsh-syntax-highlighting
 )
-
-ZSH_COMPDUMP="${ZSH_CACHE_DIR}/.zcompdump-${(%):-%m}-${ZSH_VERSION}"
 
 source $ZSH/oh-my-zsh.sh
 
