@@ -49,7 +49,6 @@ alias sym="symfony"
 alias symc="symfony console"
 
 ###
-### Windows OS
+### WSL
 ###
-# alias code="/mnt/c/Users/Steven/AppData/Local/Programs/'Microsoft VS Code'/bin/code"
 # alias ipw="hostname -I"
