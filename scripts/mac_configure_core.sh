@@ -25,4 +25,7 @@ echo "Screenshots: store in /tmp"
 defaults write com.apple.screencapture location /tmp
 
 echo "Window: add the ability to move a window with ctrl + cmd + click"
-defaults write -g NSWindowShouldDragOnGesture -bool true   
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
+echo "TextEdit: new file by default instead of opening one"
+defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
