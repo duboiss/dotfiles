@@ -15,25 +15,19 @@
 
 [alias]
 	aliases = config --get-regexp alias
-	ba = branch -a
-	bm = branch -m
-	bd = branch -D
+	ba = branch --all # branch all, list local and remote branches
+	bd = branch -D # branch delete, delete the given branch even if it contains unmerged commits
 	bip = for-each-ref --sort='authordate:iso8601' --format='%(color:green)%(authordate:relative)%09%(color:yellow)%(refname:short)%(color:white) / %(color:yellow)%(objectname:short) %(color:white)%(contents:subject)' refs/heads
-	br = branch --sort=-committerdate -v
-	brr = branch --sort=-committerdate -vv
-	branches = branch --all
-	ci = commit
+	bl = branch --sort=-committerdate -vv # list local branches sorted in descending order based on the latest commit date
+	br = branch -m # branch rename, rename the branch in first argument with the value of the second argument
 	clb = clone -b
-	cn = rev-list --count HEAD
 	conflicts = diff --name-only --diff-filter=U
-	contributors = shortlog --summary --email --numbered
 	deindex = restore --worktree
 	deindexall = restore --worktree .
 	difff = diff ':(exclude)composer.lock' ':(exclude)package-lock.json' ':(exclude)yarn.lock'
 	graph = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %Cblue<%an>%Creset'
-	lc = log -1 HEAD --stat
-	lg = log --oneline
-	ln = log -n
+	lo = log --oneline
+	ln = log -n # git log with the given number of commits
 	ls = log --stat
 	m = switch master
 	nuke =  !git clean -df && git reset --hard
@@ -63,7 +57,7 @@
 	go = "!f() { git switch -c \"$1\" 2> /dev/null || git switch \"$1\"; }; f"
 
 	# Delete merged branches
-  	merged = "!f() { git branch --merged ${1:-master} | egrep -v \"(^\\*|${1:-master}|development)\" | xargs git branch -d; };f"
+  	merged = "!f() { git branch --merged ${1:-master} | egrep -v \"(^\\*|${1:-master}|development|dev)\" | xargs git branch -d; };f"
 
 	# Interactive rebase with the given number of latest commits
 	rbi = "!r() { git rebase -i HEAD~$1; }; r"
@@ -95,7 +89,7 @@
 	syntax-theme = Nord
 	plus-style = "#728562"
 	minus-style = "#85434a"
-    	side-by-side = true
+    side-by-side = true
 
 # Styling
 [color "branch"]
