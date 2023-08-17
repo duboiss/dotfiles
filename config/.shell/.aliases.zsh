@@ -25,6 +25,8 @@ alias ll="exa -la --group-directories-first --icons --no-filesize"
 alias ls="exa --group-directories-first --icons"
 alias lt="ll --tree --level=2"
 
+alias gr='cd $(git rev-parse --show-toplevel)' # Automatically cd to the git root directory
+
 ###
 ### Misc
 ###
