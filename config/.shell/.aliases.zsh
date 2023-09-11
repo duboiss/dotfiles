@@ -21,8 +21,8 @@ alias cp="cp -ir"
 alias mv="mv -iv"
 alias mkdir="mkdir -vp"
 
-alias ll="exa -la --group-directories-first --icons --no-filesize"
-alias ls="exa --group-directories-first --icons"
+alias ll="eza -la --group-directories-first --icons --no-filesize"
+alias ls="eza --group-directories-first --icons"
 alias lt="ll --tree --level=2"
 
 alias gr='cd $(git rev-parse --show-toplevel)' # Automatically cd to the git root directory
