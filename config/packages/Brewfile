@@ -1,10 +1,15 @@
+tap "1password/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/services"
 
+tap "blackfireio/blackfire"
 tap "cantino/mcfly"
 tap "hashicorp/tap"
-tap "mutagen-io/mutagen"
+tap "jetbrains/utils"
+tap "platformsh/tap"
+tap "shivammathur/extensions"
 tap "shivammathur/php"
 tap "symfony-cli/tap"
 tap "warrensbox/tap"
@@ -28,7 +33,7 @@ brew "dust"
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
 # Modern, maintained replacement for ls
-brew "eza
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
@@ -41,6 +46,8 @@ brew "git"
 brew "git-delta"
 # Open-source GitLab command-line tool
 brew "glab"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # Uses CSS selectors to extract bits content from HTML files
 brew "htmlq"
 # Lightweight and flexible command-line JSON processor
@@ -53,8 +60,14 @@ brew "mas"
 brew "nano"
 # Modern replacement for ps written by Rust
 brew "procs"
+# Monitor data's progress through a pipe
+brew "pv"
+# Python version management
+brew "pyenv"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
 # Very fast implementation of tldr in Rust
 brew "tealdeer"
 # Program that allows you to count code, quickly
@@ -65,7 +78,7 @@ brew "volta"
 brew "wget"
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
-# Process YAML documents from the CLI
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
@@ -78,19 +91,18 @@ brew "zsh-completions"
 brew "cantino/mcfly/mcfly"
 # Packer
 brew "hashicorp/tap/packer"
-# Fast file synchronization and network forwarding for remote development
-brew "mutagen-io/mutagen/mutagen"
 # General-purpose scripting language
 brew "shivammathur/php/php"
-brew "shivammathur/php/php@8.0"
-brew "shivammathur/php/php@7.4"
-# Helps Symfony developers manage projects, from local code to remote infrastructure
+brew "shivammathur/php/php@8.1"
+# Symfony CLI helps Symfony developers manage projects, from local code to remote infrastructure
 brew "symfony-cli/tap/symfony-cli"
 # The tfswitch command lets you switch between terraform versions.
 brew "warrensbox/tap/tfswitch"
 # The tgswitch command lets you switch between terragrunt versions.
 brew "warrensbox/tap/tgswitch"
 
+# Command-line interface for 1Password
+cask "1password-cli"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Replacement of the default battery indicator in the menu bar
@@ -99,8 +111,6 @@ cask "battery-buddy"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Reimagine your terminal
-cask "fig"
 # Web browser
 cask "firefox"
 # Web browser
@@ -111,23 +121,35 @@ cask "insomnia"
 cask "iterm2"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# Office suite
+# Free cross-platform office suite, fresh version
 cask "libreoffice"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Team communication and collaboration software
-cask "slack"
 # Collection of apps available by subscription
 cask "setapp"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Rust-based terminal
+cask "warp"
 
 mas "Amphetamine", id: 937984704
+mas "Command X", id: 6448461551
+mas "HP Smart", id: 1474276998
 mas "Meeter", id: 1510445899
-mas "Parcel", id: 639968404
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+vscode "mechatroner.rainbow-csv"
