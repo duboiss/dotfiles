@@ -11,6 +11,8 @@
     "editor.snippetSuggestions": "top",
     "editor.suggest.insertMode": "replace",
 
+    "explorer.compactFolders": false,
+
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -35,9 +37,7 @@
     "editor.guides.indentation": false,
     "editor.minimap.enabled": false,
 
-    "explorer.openEditors.visible": 0,
-
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.location": "hidden",
     "workbench.statusBar.visible": false,
 
 
