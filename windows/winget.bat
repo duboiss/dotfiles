@@ -13,6 +13,7 @@ winget install --id=Google.Chrome -e
 && winget install --id=SlackTechnologies.Slack -e 
 
 # Development
+&& winget install --id Microsoft.Powershell -e 
 && winget install --id=Docker.DockerDesktop -e 
 && winget install --id=JetBrains.Toolbox -e 
 && winget install --id=Microsoft.VisualStudioCode -e 
