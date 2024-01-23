@@ -30,6 +30,7 @@ alias gr='cd $(git rev-parse --show-toplevel)' # Automatically cd to the git roo
 ###
 ### Misc
 ###
+alias aws_profile='export AWS_PROFILE=$(aws configure list-profiles | fzf --prompt "Choose active AWS profile:")'
 alias go="take" # oh-my-zsh specific
 alias hostfile="nano /etc/hosts"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
