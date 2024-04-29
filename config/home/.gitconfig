@@ -67,10 +67,14 @@
 
 [diff]
 	noprefix = true
+    colorMoved = default # delta setting
+
+[interactive]
+    diffFilter = delta --color-only # delta setting
 
 [pager]
 	branch = false
-	diff = delta
+    diff = delta # delta setting
 	stash = false
 	tag = false
 
@@ -82,13 +86,17 @@
 	autoSetupRemote = true
 
 [rebase]
-	autostash = true
+    autostash = true
+
+[url "git@github.com:"]
+    insteadOf = "https://github.com/"
 
 # Custom plugins
 [delta]
-	syntax-theme = Nord
-	plus-style = "#728562"
-	minus-style = "#85434a"
+    navigate = true # delta setting, use n and N to move between diff sections
+    syntax-theme = Nord
+    plus-style = "#728562"
+    minus-style = "#85434a"
     side-by-side = true
 
 # Styling
