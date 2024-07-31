@@ -25,8 +25,8 @@ brew "bat"
 brew "composer"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Command-line DNS client
-brew "dog"
+# Command-line DNS Client for Humans
+brew "doggo"
 # More intuitive version of du in rust
 brew "dust"
 # Select default apps for documents and URL schemes on macOS
