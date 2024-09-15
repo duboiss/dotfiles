@@ -7,6 +7,7 @@ winget install --id=Google.Chrome -e
 && winget install --id=QL-Win.QuickLook  -e 
 && winget install --id=Piriform.Speccy -e 
 && winget install --id=Microsoft.PowerToys -e 
+&& winget install --id zyedidia.micro -e 
 
 # Communication
 && winget install --id=Discord.Discord -e 
@@ -17,6 +18,7 @@ winget install --id=Google.Chrome -e
 && winget install --id=Docker.DockerDesktop -e 
 && winget install --id=JetBrains.Toolbox -e 
 && winget install --id=Microsoft.VisualStudioCode -e 
+&& winget install --id Volta.Volta -e 
 
 # Files
 && winget install --id=SumatraPDF.SumatraPDF -e 
