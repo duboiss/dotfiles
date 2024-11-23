@@ -16,6 +16,7 @@ winget install --id=Google.Chrome -e
 # Development
 && winget install --id Microsoft.Powershell -e 
 && winget install --id=Docker.DockerDesktop -e 
+&& winget install --id=Insomnia.Insomnia -e 
 && winget install --id=JetBrains.Toolbox -e 
 && winget install --id=Microsoft.VisualStudioCode -e 
 && winget install --id Volta.Volta -e 
