@@ -26,7 +26,7 @@ ZSH_DISABLE_COMPFIX=true
 [ -f $HOME/.shell/.setup.zsh ] && source "$HOME/.shell/.setup.zsh"
 
 eval "$(mcfly init zsh)"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 #### FIG ENV VARIABLES ####
 [[ -s ~/.fig/fig.sh ]] && source ~/.fig/fig.sh
