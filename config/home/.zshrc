@@ -10,9 +10,6 @@ ZSH_COMPDUMP="${ZSH_CACHE_DIR}/.zcompdump-${(%):-%m}-${ZSH_VERSION}"
 ZSH_THEME="minimalist"
 
 plugins=(
-	colored-man-pages
-	web-search
-	yarn
 	zsh-autosuggestions
 	zsh-interactive-cd
 	zsh-syntax-highlighting
