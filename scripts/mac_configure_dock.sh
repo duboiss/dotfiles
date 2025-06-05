@@ -14,7 +14,7 @@ defaults write com.apple.dock mineffect -string "scale"
 
 # System Preferences > Desktop & Dock > Minimize windows into application icon
 echo "Dock: minimize windows into application icon"
-defaults write com.apple.dock minimize-to-application -bool false
+defaults write com.apple.dock minimize-to-application -bool true
 
 # System Preferences > Desktop & Dock > Automatically hide and show the Dock
 echo "Dock: automatically hide and show the dock"
