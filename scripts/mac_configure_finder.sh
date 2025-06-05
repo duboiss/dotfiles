@@ -2,7 +2,7 @@
 
 echo "Finder: set default location to Home"
 defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Documents"
 
 echo "Finder: keep folders on top when sorting by name"
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -30,5 +30,11 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 echo "Finder: disable the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+echo "Finder: disable showing volumes on the desktop"
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false # Disable internal hard disks
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false # Disable external hard drives (e.g. USB)
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false # Disable removable media (CDs, DVDs, iPods)
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false # Disable connected network servers
 
 killall Finder
