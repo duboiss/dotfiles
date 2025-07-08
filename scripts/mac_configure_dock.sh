@@ -17,8 +17,8 @@ echo "Dock: minimize windows into application icon"
 defaults write com.apple.dock minimize-to-application -bool true
 
 # System Preferences > Desktop & Dock > Automatically hide and show the Dock
-echo "Dock: automatically hide and show the dock"
-defaults write com.apple.dock autohide -bool true
+echo "Dock: always show the dock"
+defaults write com.apple.dock autohide -bool false
 
 # System Preferences > Desktop & Dock > Automatically hide and show the Dock (duration)
 echo "Dock: automatically hide and show the dock (duration)"
@@ -37,7 +37,12 @@ echo "Dock: hide 'recent applications'"
 defaults write com.apple.dock show-recents -bool false
 
 # System Preferences > Desktop & Dock > Prefer tabs when opening documents
+echo "Dock: prefer tabs when opening documents"
 defaults write -g AppleWindowTabbingMode -string "always"
+
+# System Preferences > Desktop & Dock > Position on screen
+echo "Dock: dock position to the left"
+defaults write com.apple.dock orientation -string "left"
 
 # System Preferences > Mission Control > Hot Corners
 echo "Dock: disable hot corners"

@@ -4,7 +4,7 @@
 sudo -v
 
 # Remove last login text on shell startup
-touch .hushlogin
+touch $HOME/.hushlogin
 
 if [[ $(uname) == "Darwin" ]]; then
     # Install Homebrew if not already installed (for MacOS)
@@ -23,6 +23,6 @@ if [[ $(uname) == "Linux" && -f /etc/debian_version ]]; then
     # Install zsh and set it as default shell
     sudo apt install zsh -y
     chsh -s $(which zsh)
-    touch .zshrc
+    touch $HOME/.zshrc
     exec zsh
 fi
