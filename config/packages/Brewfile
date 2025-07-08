@@ -1,12 +1,6 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/services"
-
 tap "blackfireio/blackfire"
 tap "hashicorp/tap"
 tap "jetbrains/utils"
-tap "platformsh/tap"
 tap "shivammathur/extensions"
 tap "shivammathur/php"
 tap "symfony-cli/tap"
@@ -48,15 +42,21 @@ brew "glab"
 brew "gnu-sed"
 # Uses CSS selectors to extract bits content from HTML files
 brew "htmlq"
+# Improved top (interactive process viewer)
+brew "htop"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Utility for directing compilation
 brew "make"
 # Mac App Store command-line interface
 brew "mas"
+# Fly through your shell history
+brew "mcfly"
+# Modern and intuitive terminal-based text editor
+brew "micro"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
-# Modern replacement for ps written by Rust
+# Modern replacement for ps written in Rust
 brew "procs"
 # Monitor data's progress through a pipe
 brew "pv"
@@ -66,10 +66,10 @@ brew "pyenv"
 brew "shellcheck"
 # Autoformat shell script source code
 brew "shfmt"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
 # Very fast implementation of tldr in Rust
 brew "tealdeer"
-# Program that allows you to count code, quickly
-brew "tokei"
 # JavaScript toolchain manager for reproducible environments
 brew "volta"
 # Internet file retriever
@@ -85,13 +85,11 @@ brew "zsh"
 # Additional completion definitions for zsh
 brew "zsh-completions"
 
-# McFly
-brew "cantino/mcfly/mcfly"
+brew "blackfireio/blackfire/blackfire"
 # Packer
 brew "hashicorp/tap/packer"
 # General-purpose scripting language
 brew "shivammathur/php/php"
-brew "shivammathur/php/php@8.1"
 # Symfony CLI helps Symfony developers manage projects, from local code to remote infrastructure
 brew "symfony-cli/tap/symfony-cli"
 # The tfswitch command lets you switch between terraform versions.
@@ -99,24 +97,19 @@ brew "warrensbox/tap/tfswitch"
 # The tgswitch command lets you switch between terragrunt versions.
 brew "warrensbox/tap/tgswitch"
 
-# Command-line interface for 1Password
-cask "1password-cli"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Replacement of the default battery indicator in the menu bar
 cask "battery-buddy"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
-cask "docker"
 # Web browser
 cask "firefox"
+cask "font-symbols-only-nerd-font"
 # Web browser
 cask "google-chrome"
 # HTTP and GraphQL Client
 cask "insomnia"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Free cross-platform office suite, fresh version
@@ -150,4 +143,3 @@ mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
-vscode "mechatroner.rainbow-csv"
