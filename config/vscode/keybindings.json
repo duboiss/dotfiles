@@ -22,6 +22,14 @@
         "key": "ctrl+k ctrl+b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
+        {
+        "key": "ctrl+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
     {
         "key": "ctrl+e",
         "command": "workbench.action.focusActiveEditorGroup"
@@ -51,7 +59,7 @@
     },
 
     /*
-        Emmet
+        Editor
     */
     {
         "key": "ctrl+e ctrl+i",

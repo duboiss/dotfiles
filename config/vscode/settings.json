@@ -56,7 +56,7 @@
     */
     "editor.accessibilitySupport": "off",
     "editor.fontLigatures": true,
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "editor.renderWhitespace": "trailing",
 
     "explorer.autoReveal": false,
