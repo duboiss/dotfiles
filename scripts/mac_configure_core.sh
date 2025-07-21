@@ -29,3 +29,6 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 
 echo "TextEdit: new file by default instead of opening one"
 defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
+
+# Mouse > Natural scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
