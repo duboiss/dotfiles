@@ -9,20 +9,21 @@ gcd() {
   REPO=$1
   CLONEPATH=$2
 
+  if [[ "$REPO" == git\ clone* ]]; then
+      REPO=$(echo "$REPO" | awk '{print $3}')
+  fi
+
   if [ -z "$CLONEPATH" ]; then
       CLONEPATH=${$(basename "$REPO")/.git/}
   fi
 
-  git clone "$REPO" $CLONEPATH
-  cd $CLONEPATH || exit
+  git clone "$REPO" "$CLONEPATH"
+  cd "$CLONEPATH" || exit
 }
 
-# Create a folder and move into it in one command
-mkcd() { mkdir -p "$@" && cd "$_"; }
-
 # File search functions
-f() { find . -iname "*$1*" ${@:2} }
-r() { grep "$1" ${@:2} -R . }
+findFiles() { find . -iname "*$1*" ${@:2} }
+findInFiles() { grep "$1" ${@:2} -R . }
 
 # Homebrew cleaning
 cleanmypc() {
@@ -53,6 +54,10 @@ bup() {
     for prog in $(echo $upd);
     do; brew upgrade $prog; done;
   fi
+}
+
+terragrunt_clear() {
+  find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;
 }
 
 ###

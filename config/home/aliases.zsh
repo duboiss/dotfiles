@@ -14,6 +14,9 @@ alias dcre="docker compose restart"
 
 alias dr="docker run"
 
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+dstop() { docker stop $(docker ps -a -q); }
+
 ###
 ### Files & directories
 ###
@@ -32,16 +35,16 @@ alias gr='cd $(git rev-parse --show-toplevel)' # Automatically cd to the git roo
 ###
 alias aws_profile='export AWS_PROFILE=$(aws configure list-profiles | fzf --prompt "Choose active AWS profile:")'
 alias go="take" # oh-my-zsh specific
-alias hostfile="nano /etc/hosts"
+alias hostfile="micro /etc/hosts"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias n="nano"
+alias m="micro"
 alias path="echo -e ${PATH//:/\\n} | sort --unique" # Print each PATH entry on a separate line
-alias publickey="cat ~/.ssh/id_rsa.pub"
+alias publickey="cat ~/.ssh/id_ed25519.pub"
 alias q="cd ~ && clear"
 alias reload="source ~/.zshrc"
 alias rmrf="rm -rf"
 alias ws="cd ~/workspace"
-alias zshconfig="nano ~/.zshrc"
+alias zshconfig="micro ~/.zshrc"
 
 ###
 ### PHP
