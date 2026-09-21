@@ -25,12 +25,6 @@ gcd() {
 findFiles() { find . -iname "*$1*" ${@:2} }
 findInFiles() { grep "$1" ${@:2} -R . }
 
-# Homebrew cleaning
-cleanmypc() {
-  brew autoremove
-  brew cleanup
-}
-
 # PHP
 changephp() {
   if [[ -n "$1" ]]; then
@@ -51,9 +45,11 @@ bup() {
   local upd=$(brew outdated | fzf --height 40% --multi)
 
   if [[ $upd ]]; then
-    for prog in $(echo $upd);
-    do; brew upgrade $prog; done;
+    brew upgrade --yes $upd
   fi
+  
+  brew autoremove
+  brew cleanup
 }
 
 terragrunt_clear() {
