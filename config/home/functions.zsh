@@ -44,8 +44,8 @@ bup() {
   brew update
   local upd=$(brew outdated | fzf --height 40% --multi)
 
-  if [[ $upd ]]; then
-    brew upgrade --yes $upd
+  if [[ -n "$upd" ]]; then
+    brew upgrade --yes $(printf '%s\n' "$upd")
   fi
   
   brew autoremove
